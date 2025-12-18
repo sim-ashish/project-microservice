@@ -1,0 +1,28 @@
+[project]
+name = "microservice"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "aiofiles>=25.1.0",
+    "alembic>=1.17.2",
+    "azure-storage-blob>=12.24.0",
+    "bcrypt>=5.0.0",
+    "django>=5.2.8",
+    "fastapi>=0.121.3",
+    "httpx>=0.28.1",
+    "jose>=1.0.0",
+    "motor>=3.7.1",
+    "passlib[bcrypt]>=1.7.4",
+    "psycopg2-binary>=2.9.11",
+    "pydantic[email]>=2.12.4",
+    "pyjwt>=2.10.1",
+    "pytest>=9.0.1",
+    "python-dotenv>=1.2.1",
+    "python-jose[cryptography]>=3.5.0",
+    "python-jwt>=4.1.0",
+    "python-multipart>=0.0.20",
+    "redis>=7.1.0",
+    "uvicorn[standard]>=0.38.0",
+]
