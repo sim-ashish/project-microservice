@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Streaming Player</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎬 Video Streaming Player</h1>
+            <p>Stream videos seamlessly with FastAPI</p>
+        </header>
+
+        <div class="video-section">
+            <div class="video-container">
+                <video id="videoPlayer" controls>
+                    <source id="videoSource" src="" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="video-info" id="videoInfo">
+                    <p>Select a video from the list below to start streaming</p>
+                </div>
+            </div>
+
+            <div class="controls-panel">
+                <div class="video-list-header">
+                    <h2>Available Videos</h2>
+                    <button id="refreshBtn" class="refresh-btn">🔄 Refresh</button>
+                </div>
+                <div id="videoList" class="video-list">
+                    <p class="loading">Loading videos...</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="upload-section">
+            <h3>� Upload Videos to Azure</h3>
+            <div class="upload-form">
+                <input type="file" id="videoFile" accept="video/*" multiple>
+                <button id="uploadBtn" class="upload-btn">Upload to Azure Storage</button>
+                <div id="uploadProgress" class="upload-progress"></div>
+            </div>
+            <p class="info-text">
+                Supported formats: MP4, WebM, OGG, AVI, MOV, MKV
+            </p>
+        </div>
+
+        <footer>
+            <p>Built with FastAPI, HTML, CSS, and JavaScript</p>
+        </footer>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
